@@ -17,16 +17,22 @@
 -->
 <div id="test">
   <input type="text" v-model="msg">
-  <p>{{msg}}</p>
+  <p>{{msg}}</p><br/>
+  <p v-once>{{msg}}</p><br/>
+  <p>Using mustaches: {{ msg }}</p><br/>
+  <p>Using v-html directive: <span v-html="msg"></span></p><br>
+  <p>{{msg1+12}}</p>
 </div>
 <script type="text/javascript" src="../js/vue.js"></script>
 <script type="text/javascript">
-  new Vue({
+  const vm = new Vue({
       el:"#test",
       data:{
-          msg:"hello world"
+          msg:"<h1>hello world</h1>",
+          msg1:12
       }
   })
+  console.log(vm.$el);
 </script>
 </body>
 </html>

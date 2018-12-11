@@ -35,11 +35,11 @@
 
   <h2>2. 指令一: 强制数据绑定</h2><br/>
   <a :href="url">百度</a><br/>
-  <a v-bind:href="url">百度</a><br/>git
+  <a v-bind:href="url">百度</a><br/>
 
   <h2>3. 指令二: 绑定事件监听</h2><br/>
   <button v-on:click="test">点击1</button>
-  <button @click="test">点击2</button>
+  <button @click="test.prevent">点击2</button>
 
 </div>
 <script type="text/javascript" src="../js/vue.js"></script>
@@ -48,7 +48,7 @@
       el:"#app",
       data:{
           msg:"111111",
-          url:'http://www.baidu.con'
+          url:'http://www.baidu.com'
       },
       methods:{
           test(){
