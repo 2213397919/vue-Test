@@ -1,0 +1,11 @@
+{
+  "name": "vuetest",
+  "version": "1.0.0",
+  "description": "1). 一位华裔前Google工程师(尤雨溪)开发的前端js库\r \t2). 作用: 动态构建用户界面\r \t3). 特点:\r \t\t* 遵循MVVM模式\r \t\t* 编码简洁, 体积小, 运行效率高, 移动/PC端开发\r \t\t* 它本身只关注UI, 可以轻松引入vue插件和其它第三库开发项目\r \t4). 与其它框架的关联:\r \t\t* 借鉴angular的模板和数据绑定技术\r \t\t* 借鉴react的组件化和虚拟DOM技术\r \t5). vue包含一系列的扩展插件(库):\r \t\t* vue-cli: vue脚手架\r \t\t* vue-resource(axios): ajax请求\r \t\t* vue-router: 路由\r \t\t* vuex: 状态管理\r \t\t* vue-lazyload: 图片懒加载\r \t\t* vue-scroller: 页面滑动相关\r \t\t* mint-ui: 基于vue的组件库(移动端)\r \t\t* element-ui: 基于vue的组件库(PC端)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
