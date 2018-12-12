@@ -3,12 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>17_插件</title>
+  <div id="demo">
+    <p v-upper-text="msg"></p>
+  </div>
 </head>
 <body>
 
 <script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="./plus.js"></script>
 <script type="text/javascript">
-
+  Vue.use(MyPlugin);
+  Vue.myGlobalMethod();
+  const vm = new Vue({
+      el: '#demo',
+      data:{
+          msg: 'I like You'
+      }
+  })
+  vm.$l();
 </script>
 </body>
 </html>

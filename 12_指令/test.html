@@ -19,13 +19,27 @@
   ref : 为某个元素注册一个唯一标识, vue对象通过$els属性访问这个元素对象
   v-cloak : 使用它防止闪现表达式, 与css配合: [v-cloak] { display: none }
 -->
+<!--npm config set registry https://registry.npm.taobao.org-->
 <div id="example">
-
+<p v-text="msg"></p>
+  <p v-html="msg"></p>
+  <p ref="content">{{msg}}</p>
+  <button @click="hit">hit</button>
 </div>
 
 <script type="text/javascript" src="../js/vue.js"></script>
 <script type="text/javascript">
-
+  new Vue({
+      el: '#example',
+      data:{
+          msg: '<h1>hi,thank you</h1>'
+      },
+      methods:{
+          hit(){
+              alert(this.$refs.content.textContent);
+          }
+      }
+  })
 </script>
 </body>
 </html>
